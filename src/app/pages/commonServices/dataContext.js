@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('commonServices')
-      .service('dataContext',['$http','connectInfo', function($http,connectInfo){
+      .service('dataContext',function($http,connectInfo){
 
         this.getData = function(route,postData){
             console.log(connectInfo.url + ":" + connectInfo.port + "/" + route);
@@ -25,5 +25,5 @@
 
             return 200;
         }
-      }]);
+      });
 })();
