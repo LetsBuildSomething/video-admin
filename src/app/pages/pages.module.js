@@ -18,6 +18,7 @@
     'BlurAdmin.pages.profile',
 
     'commonServices',
+    'insert',
   ])
       .config(routeConfig);
 
